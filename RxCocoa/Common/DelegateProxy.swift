@@ -160,7 +160,7 @@ open class DelegateProxy : _RXDelegateProxy {
     - parameter forwardToDelegate: Reference of delegate that receives all messages through `self`.
     - parameter retainDelegate: Should `self` retain `forwardToDelegate`.
     */
-    public func setForwardToDelegate(_ delegate: AnyObject?, retainDelegate: Bool) {
+    open func setForwardToDelegate(_ delegate: AnyObject?, retainDelegate: Bool) {
         self._setForward(toDelegate: delegate, retainDelegate: retainDelegate)
     }
    
